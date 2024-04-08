@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.section {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #d7d7d7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+header{
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.dropdown-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.label {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+.dropdown-wrapper {
+  position: relative;
+}
+
+.dropdown {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  appearance:none;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  cursor: pointer;
+}
+
+.dropdown-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: none;
+  padding: 5px 0;
+  background-color: #fff;
+  border: 1px solid #dddddd;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+}
+
+.dropdown-options span {
+  display: block;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.dropdown-wrapper:hover .dropdown-options {
+  display: block;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-list li {
+  margin-bottom: 10px;
+  padding: 15px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.todo-list li:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+.loading-text {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
